@@ -1,0 +1,30 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 2,
+    "modules-left": ["custom/wmenu","hyprland/workspaces"],
+    "modules-right": ["clock","custom/power"],
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
+        "on-scroll-up": "hyprctl dispatch workspace e-1"
+    },
+
+    "custom/wmenu": {
+        "format": "WMENU",
+        "on-click": "wmenu-run"
+    },
+    "custom/power": {
+        "format": "USER",
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/pwr.xml",
+        "menu-options": {
+            "shutdown": "poweroff",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate",
+            "reload-hyprland": "hyprctl reload"
+        }
+    }
+}

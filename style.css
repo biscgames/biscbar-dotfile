@@ -1,0 +1,36 @@
+#waybar {
+    background-color: #313244;
+}
+#workspaces {
+    border-radius: 12px;
+    padding: 10px;
+}
+#workspaces button {
+    min-width: 25px;
+    margin-right: 10px;
+    transition: all 0.25s ease-out;
+    border-radius: 100px;
+    background-color: #b4befe;
+    color: black;
+}
+#workspaces button.active {
+    min-width: 75px;
+}
+#custom-wmenu {
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: larger;
+    color: #b4befe;
+}
+#custom-power {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: larger;
+    color: #b4befe;
+}
+#clock {
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: larger;
+    color: #b4befe;
+}
